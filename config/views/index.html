@@ -1,24 +1,9 @@
-<!DOCTYPE html>
-<html>
+<div id="chatbot-body">
+  <ul id="chatbot-ul"></ul>
+</div>
 
-<body>
-
-  <h2>Inquiry Form</h2>
-
-  <form action="/submit_inquiry" method="post">
-    <label for="fname">First Name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last Name:</label><br>
-    <input type="text" id="lname" name="lname"><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br>
-    <label for="subject">Subject:</label><br>
-    <input type="text" id="subject" name="subject" required><br>
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" style="height:200px" required></textarea><br>
-    <input type="submit" value="Submit">
-  </form>
-
-</body>
-
-</html>
+<!--入力場所，送信ボタン-->
+<form onsubmit="return false">
+  <input type="text" placeholder="お問い合わせ内容を入力して下さい">
+  <input type="submit" value="送信">
+</form>
